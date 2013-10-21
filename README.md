@@ -1,4 +1,4 @@
-MinifyJS
+smushJS
 ========
 
 ### Install
@@ -7,7 +7,7 @@ MinifyJS
 $ npm install smush
 ```
 
-Utility package to help minify css and js files. Currently supports `jade` template language, but can easily be extended to support other formats.
+Utility package to help smush css and js files. Currently supports `jade` template language, but can easily be extended to support other formats.
 
 Minified files are placed in `options.target` dir, defaults to `public/css/min` and `public/js/min` for css and js files respectively.
 
@@ -41,14 +41,14 @@ Please check default options for search and replace patterns listed below or in 
     };
 
 
-### Minify CSS
+### Smush CSS
 
-Use `minifyjs.css(options, callback)` to minify css files. `template` is a required field that species the `.tmpl` file to minify.
+Use `smushjs.css(options, callback)` to smush css files. `template` is a required field that species the `.tmpl` file to smush.
 
 **Example**
 
-    var minifyjs = require('minifyjs');
-    minifyjs.css({
+    var smushjs = require('smushjs');
+    smushjs.css({
       template: 'test/sample/css/styles',
       pattern: /link\(rel=\"stylesheet\",href=\"(.*)\.css\"/,
       source: 'test/sample/',
@@ -56,13 +56,13 @@ Use `minifyjs.css(options, callback)` to minify css files. `template` is a requi
     }, callback);
 
 
-### Minify JS
+### Smush JS
 
-Use `minifyjs.js(options, callback)` to minify javascript files. `template` is a required field that species the `.tmpl` file to minify.
+Use `smushjs.js(options, callback)` to smush javascript files. `template` is a required field that species the `.tmpl` file to smush.
 
 **Example**
 
-    minifyjs.js({
+    smushjs.js({
       template: 'test/sample/js/scripts',
       pattern: /script\(src\=\'(.*)\.js\'/,
       source: 'test/sample/',
@@ -72,4 +72,4 @@ Use `minifyjs.js(options, callback)` to minify javascript files. `template` is a
 
 ### Test Code
 
-Run `npm test` or `node path/to/minifyjs/index.js` to verify if minification is working. Please check files under `test` dir for a sample implementaion.
+Run `npm test` or `node path/to/smush/index.js` to verify if minification is working. Please check files under `test` dir for a sample implementaion.

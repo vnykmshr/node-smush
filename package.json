@@ -1,7 +1,7 @@
 {
   "name": "smush",
   "version": "0.0.1",
-  "description": "Utility package to minify css and js files",
+  "description": "Utility package to smush css and js files",
   "main": "index.js",
   "scripts": {
     "test": "node test"
@@ -15,7 +15,7 @@
     "url": "git@github.com:vnykmshr/node-smush.git"
   },
   "keywords": [
-    "minify",
+    "smush",
     "css",
     "js"
   ],
