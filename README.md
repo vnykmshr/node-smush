@@ -7,6 +7,8 @@ smushJS
 $ npm install smush
 ```
 
+[![Build Status](https://travis-ci.org/vnykmshr/node-smush.png?branch=master)](https://travis-ci.org/visionmedia/jade)
+
 Utility package to help smush css and js files. Currently supports `jade` template language, but can easily be extended to support other formats.
 
 Minified files are placed in `options.target` dir, defaults to `public/css/min` and `public/js/min` for css and js files respectively.
