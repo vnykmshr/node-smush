@@ -1,6 +1,12 @@
 MinifyJS
 ========
 
+### Install
+
+```
+$ npm install smush
+```
+
 Utility package to help minify css and js files. Currently supports `jade` template language, but can easily be extended to support other formats.
 
 Minified files are placed in `options.target` dir, defaults to `public/css/min` and `public/js/min` for css and js files respectively.
@@ -23,7 +29,7 @@ Please check default options for search and replace patterns listed below or in 
           source: 'public',
           target: 'public/css/min/'
         },
-        
+
         js: {
           pattern: /script\(src\=\"(.*)\.js\"/,
           replacePattern: '<PLACEHOLDERFORMINIFIEDFILE>',
