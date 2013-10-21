@@ -1,0 +1,24 @@
+{
+  "name": "smush",
+  "version": "0.0.1",
+  "description": "Utility package to minify css and js files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "uglify-js": "*",
+    "clean-css": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vnykmshr/node-smush.git"
+  },
+  "keywords": [
+    "minify",
+    "css",
+    "js"
+  ],
+  "author": "Vinayak Mishra",
+  "license": "MIT"
+}
