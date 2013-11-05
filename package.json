@@ -1,14 +1,14 @@
 {
   "name": "smush",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility package to smush css and js files",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
   "dependencies": {
-    "uglify-js": "*",
-    "clean-css": "*"
+    "uglify-js": "2",
+    "clean-css": "2"
   },
   "repository": {
     "type": "git",
