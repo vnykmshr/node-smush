@@ -11,11 +11,15 @@ var smush = {
     util.log('Starting css smush test');
     smush.testcss(function (err, css) {
       if (err) return cb(err);
+
       util.log('Starting js smush test');
       smush.testjs(function (err, js) {
         if (err) return cb(err);
+
         util.log('Starting cleanup');
-        var files = [path.join('test/sample/min', css), path.join('test/sample/min', js)];
+        var files = [path.join('test/sample/min', css),
+          path.join('test/sample/min', js)];
+
         smush.cleanup(files, cb);
       });
     });
@@ -48,6 +52,7 @@ var smush = {
         fs.unlinkSync(file);
       }
     }
+
     cb(null, files);
   }
 };

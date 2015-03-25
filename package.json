@@ -1,14 +1,14 @@
 {
   "name": "smush",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utility package to smush css and js files",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
   "dependencies": {
-    "uglify-js": "2",
-    "clean-css": "2"
+    "clean-css": "^2.2.23",
+    "uglify-js": "^2.4.17"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
     "css",
     "js"
   ],
-  "author": "Vinayak Mishra",
+  "author": "Vinayak Mishra <viks@vnykmshr.com>",
   "license": "MIT"
 }

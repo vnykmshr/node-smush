@@ -1,5 +1,5 @@
-SmushJS
-========
+Node Smush
+==========
 
 ### Install
 
@@ -45,12 +45,12 @@ Please check default options for search and replace patterns listed below or in 
 
 ### Smush CSS
 
-Use `smushjs.css(options, callback)` to smush css files. `template` is a required field that species the `.tmpl` file to smush.
+Use `smush.css(options, callback)` to smush css files. `template` is a required field that species the `.tmpl` file to smush.
 
 **Example**
 
-    var smushjs = require('smushjs');
-    smushjs.css({
+    var smush = require('smush');
+    smush.css({
       template: 'test/sample/css/styles',
       pattern: /link\(rel=\"stylesheet\",href=\"(.*)\.css\"/,
       source: 'test/sample/',
@@ -60,11 +60,11 @@ Use `smushjs.css(options, callback)` to smush css files. `template` is a require
 
 ### Smush JS
 
-Use `smushjs.js(options, callback)` to smush javascript files. `template` is a required field that species the `.tmpl` file to smush.
+Use `smush.js(options, callback)` to smush javascript files. `template` is a required field that species the `.tmpl` file to smush.
 
 **Example**
 
-    smushjs.js({
+    smush.js({
       template: 'test/sample/js/scripts',
       pattern: /script\(src\=\'(.*)\.js\'/,
       source: 'test/sample/',
@@ -74,4 +74,4 @@ Use `smushjs.js(options, callback)` to smush javascript files. `template` is a r
 
 ### Test Code
 
-Run `npm test` or `node path/to/smush/index.js` to verify if minification is working. Please check files under `test` dir for a sample implementaion.
+Run `npm test` or `node path/to/smush/index.js` to verify if minify is working. Please check files under `test` dir for a sample implementation.
