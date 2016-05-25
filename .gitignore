@@ -20,5 +20,6 @@ results
 npm-debug.log
 node_modules
 
+test/sample/css/styles.jade
 test/sample/js/scripts.jade
 test/sample/min
